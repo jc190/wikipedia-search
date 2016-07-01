@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $primaryFont;
+  background-color: #f1f1f1;//#2980b9;//#ecf0f1;
+  overflow-y: scroll;
+  padding-bottom: 4rem;
+}
+
+.wrap {
+  @include container();
+}
