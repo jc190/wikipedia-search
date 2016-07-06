@@ -12,7 +12,7 @@ $(document).ready(function() {
       this.update();
       if (this.searchTerm.length) {
         wikiSearch.reset();
-        $('.search-container').css('margin-top', '0%');
+        $('.wrap').css({'top': '0%'});
         $.ajax({
           url: this.apiURL,
           dataType: 'jsonp',
@@ -27,7 +27,7 @@ $(document).ready(function() {
                     + data[2][i] + '</span></li></a>';
                     $('#results, ul').append(html);
             }
-            $('#results').css({'max-height': '2000px'});
+            $('#results').css({'max-height': '9000px'});
             $.each($('.wiki-result'), function(i, el) {
               $(el).css({'opacity': 0, 'margin-top': '50px'});
               setTimeout(function() {

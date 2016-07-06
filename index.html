@@ -19,23 +19,31 @@
     <header>
 
     </header>
-    <section>
-      <div class="wrap">
-        <div class="search-container">
-          <h1>Search Wikipedia</h1>
-          <form id="search" action="javascript:" onsubmit="submitQuery()">
-            <input type="text" name="search-term" id="search-term" placeholder="Search..." autocomplete="off">
-            <button type="submit" name="sumbit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
+    <div class="flex-container">
+      <div class="flex-spacer"></div>
+      <section>
+        <div class="wrap">
+          <div class="search-container">
+            <h1>Search Wikipedia</h1>
+            <form id="search" action="javascript:" onsubmit="submitQuery()">
+              <input type="text" name="search-term" id="search-term" placeholder="Search..." autocomplete="off">
+              <button type="submit" name="sumbit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+          </div>
+          <div id="results">
+            <ul></ul>
+          </div>
+          <div class="random-link">
+            <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener noreferrer">Random Wikipedia Article</a>
+          </div>
+          <p class="ws-footer">
+            <span>Made by <a href="http://www.jtcstudio.com"><i class="fa fa-user" aria-hidden="true"></i> James Calhoun</a>.</span>
+            <span>View on <a href="https://github.com/jc190/wikipedia-search"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>.</span>
+          </p>
         </div>
-        <div id="results">
-          <ul></ul>
-        </div>
-        <div class="random-link">
-          <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener noreferrer">Random Wikipedia Article</a>
-        </div>
-      </div>
-    </section>
+      </section>
+      <div class="flex-spacer"></div>
+    </div>
     <footer>
 
     </footer>

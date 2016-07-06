@@ -371,11 +371,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+html, body {
+  height: 100%;
+  width: 100%; }
+
 body {
   font-family: "Open Sans";
   background-color: #f1f1f1;
   overflow-y: scroll;
-  padding-bottom: 4rem; }
+  padding-bottom: 1rem; }
 
 .wrap {
   max-width: 1140px;
@@ -387,9 +391,7 @@ body {
     clear: both; }
 
 .search-container {
-  margin-top: 30%;
-  text-align: center;
-  transition: all ease-in-out .3s; }
+  text-align: center; }
   .search-container h1 {
     display: block;
     font-size: 2.618rem;
@@ -398,7 +400,9 @@ body {
 
 #search {
   display: inline-block;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); }
   #search input, #search button {
     float: left; }
   #search input:focus, #search button:focus {
@@ -416,7 +420,7 @@ body {
     margin: 0;
     transition: all ease-in-out .6s; }
   #search input:focus {
-    max-width: 400px; }
+    max-width: 200px; }
   #search input:focus ~ button {
     color: #3498db; }
   #search button {
@@ -449,24 +453,27 @@ body {
     display: block;
     margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: 1rem;
     text-decoration: none;
-    color: #555;
+    color: #676767;
     background-color: white;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    transition: all ease-in-out .3s; }
   #results a:hover {
-    color: #333; }
-  #results a:hover .title {
-    text-decoration: underline; }
+    color: #333;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); }
   #results li {
     list-style: none; }
   #results .title {
     font-size: 1.618rem;
     line-height: 2.5rem;
-    font-weight: 300; }
+    font-weight: 300;
+    border-bottom: 1px solid #ccc;
+    display: block; }
   #results .snippet {
     font-size: 1rem;
-    line-height: 1.25rem; }
+    line-height: 1.25rem;
+    display: block;
+    margin-bottom: .75rem; }
 
 .random-link {
   text-align: center; }
@@ -482,5 +489,27 @@ body {
   .random-link a:hover {
     color: #555;
     border: 1px solid #555; }
+
+.ws-footer {
+  color: #555;
+  font-size: .9rem;
+  text-align: center; }
+  .ws-footer a {
+    color: #3498db;
+    text-decoration: none; }
+  .ws-footer p {
+    margin-top: 1rem; }
+
+.flex-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.flex-spacer {
+  flex: 1; }
+
+section {
+  flex: 1; }
 
 /*# sourceMappingURL=style.css.map */
