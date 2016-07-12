@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Uncomment line below if you need support for ie8/ie9 -->
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The 3 meta tags above must come before anything else -->
+    <title>Search Wikipedia - James Calhoun</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Style links -->
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="http://basehold.it/20"> -->
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <div class="flex-container">
+      <div class="flex-spacer"></div>
+      <section>
+        <div class="wrap">
+          <div class="search-container">
+            <h1>Search Wikipedia</h1>
+            <form id="search" action="javascript:" onsubmit="submitQuery()">
+              <input type="text" name="search-term" id="search-term" placeholder="Search..." autocomplete="off">
+              <button type="submit" name="sumbit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+          </div>
+          <div id="results">
+            <ul></ul>
+          </div>
+          <div class="random-link">
+            <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener noreferrer">Random Wikipedia Article</a>
+          </div>
+          <p class="ws-footer">
+            <span>Made by <a href="http://www.jtcstudio.com"><i class="fa fa-user" aria-hidden="true"></i> James Calhoun</a>.</span>
+            <span>View on <a href="https://github.com/jc190/wikipedia-search"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>.</span>
+          </p>
+        </div>
+      </section>
+      <div class="flex-spacer"></div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="assets/js/jquery-3.0.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
+  </body>
+</html>
